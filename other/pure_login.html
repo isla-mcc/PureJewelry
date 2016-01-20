@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Login</title>
+    </head>
+    
+    <style>
+        body {
+            font-family: signo, sans-serif;
+        }
+        h1 {
+            font-family: KGBeneathYourBeautiful, sans-serif;
+            text-align: center;
+            
+        }
+        
+/*NAV BAR*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+
+        }   
+
+        li {
+            
+            display: inline;
+        }
+
+        li a {
+            display:inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #93d8f2;
+        }
+        
+        #navbar {
+            border-bottom: 2px solid;
+            border-color: black;
+        }
+        
+        #login_inputs {
+            display: block;
+            border-radius: 5px;
+            border: none;
+            background-color: #93d8f2;
+            padding: 15px;
+            width: 60%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: signo, sans-serif;
+        }
+        
+        #login_button {
+            display: block;
+            border-radius: 5px;
+            border: none;
+            background-color: #93d8f2;
+            padding: 15px;
+            width: 20%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: signo, sans-serif;
+        }
+        
+        #logins {
+            margin-top: 50px;
+        }
+    
+    
+    </style>
+    
+    <body>
+        <h1>pure</h1>
+            
+            <nav id="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Admin Login</a></li>
+                    <li><a href="">Cart</a></li>
+                </ul>
+            </nav>
+       
+        <div id="logins">
+            <input id="login_inputs" placeholder="username" type="text"/>
+            <input id="login_inputs" placeholder="password" type="password"/>
+            <button id="login_button">Login</button>
+        </div>
+    
+    </body>
+</html>
