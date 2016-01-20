@@ -1,0 +1,122 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+        body {
+            font-family: signo, sans-serif;
+            background: white; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(top, white , #93d8f2); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top, white, #93d8f2); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top, white, #93d8f2); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom, white , #93d8f2); /* Standard syntax */
+            
+        }
+        h1 {
+            font-family: amatic-sc, sans-serif;
+            text-align: center;
+            margin-right: auto;
+            font-size: 50px;
+            margin-top: 0;
+            
+        }
+        
+/*NAV BAR*/
+
+        #nav {
+            height: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+
+        }   
+
+        li {
+            
+            display: inline;
+        }
+
+        li a {
+            display:inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #93d8f2;
+        }
+        
+        #navbar {
+            border-bottom: 2px solid;
+            border-color: black;
+        }
+    
+        #ring_img {
+            width: 25%;
+            height: auto;
+            display: inline-block;
+            border: solid white;
+          
+        }
+    
+        #img_gallery {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 40px;
+            height: auto;
+            display: inline-block;
+            margin: auto;
+            padding-top: 10px;
+        }
+
+        #logo_div {
+            width:40%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+
+/* FOOTER */
+        span {
+            padding-top: 10px;
+            align-content: center;
+            font-size: 12px;
+            margin: 0 auto;
+            
+            
+        }
+        #foot {
+        width: 100vw;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        }
+
+/* MEDIA QUERIES FOR IPHONE/ANDROID */ 
+
+@charset "UTF-8";
+
+///////////////////////////////////////////////////////////
+@media screen and (max-width: 460px) {
+///////////////////////////////////////////////////////////
+
+#ring_img {
+            width: 50%;
+            height: auto;
+            display: block;
+            border: solid white;
+          
+        }
+body {
+background: green;
+}
+
+}
