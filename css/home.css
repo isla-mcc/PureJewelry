@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+img {
+    height:500px;
+    width:auto;
+    }
+
+#allitems {
+    width: 25%;
+    height: 300px; 
+    align-content: center;
+    float:left;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+
+#everything {
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#image {
+    height: 60%; 
+    width: auto;
+}
+
+h3 {
+    padding: 20px;
+    }
+
+body {
+    font-family: 'Hind', sans-serif;
+    align-content:center;
+}
+    
+#table2 {
+    margin:0;
+    text-align:center;
+    padding-top:0px;
+}
+    
+th {
+    font-family:Grafolita Script;
+    font-size:30px;
+    color:white;
+}
+    
+tr {
+    background-color:#B0982C;
+    border-right: solid white;
+    margin:0;
+}
+    
+td{
+    width:50vw;
+    background-color:white;
+    margin:0 auto;
+}  
+
+button {
+    background-color:white;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    border:2px solid #B0982C;
+    cursor:pointer;
+    color:black;
+    font-family:"Hind";
+    font-size:17px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #B0982C;
+    width:50px;
+    height:30px;
+    outline: none;
+    }
+
+button:hover {
+    
+	background-color:#C4B269;
+    color:white;
+}
+
+h2 {
+    font-family:Trajan Pro;
+    font-size:50px;
+    text-align:center;
+}
+
+#title{
+    color: #C4B269;
+    font-size: 1.3em;
+}
+
+#productimg {
+    width: auto;
+    height: 100%
+}

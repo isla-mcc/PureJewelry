@@ -38,7 +38,7 @@
         }
 
         li a:hover {
-            background-color: #93d8f2;
+            color: #cbe7f8;
         }
         
         #navbar {
@@ -50,7 +50,7 @@
             display: block;
             border-radius: 5px;
             border: none;
-            background-color: #93d8f2;
+            background-color: #cbe7f8;
             padding: 15px;
             width: 60%;
             margin-top: 20px;
@@ -64,7 +64,7 @@
             display: block;
             border-radius: 5px;
             border: none;
-            background-color: #93d8f2;
+            background-color: #cbe7f8;
             padding: 15px;
             width: 20%;
             margin-top: 20px;
@@ -77,26 +77,78 @@
         #logins {
             margin-top: 50px;
         }
+        
+        #logo_div {
+            width:40%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+        
+        #logo {
+            width: 40px;
+            height: auto;
+            display: inline-block;
+            margin: auto;
+            padding-top: 10px;
+        }
     
     
     </style>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     
     <body>
+                  <div id="logo_div">
+      <img src="../images/logo.png" id="logo"></img> 
+      </div>
         <h1>pure</h1>
             
             <nav id="navbar">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="">Admin Login</a></li>
-                    <li><a href="">Cart</a></li>
+                    <li><a href="../shopping-cart/shopping-cart.html">Cart</a></li>
                 </ul>
             </nav>
        
         <div id="logins">
-            <input id="login_inputs" placeholder="username" type="text"/>
-            <input id="login_inputs" placeholder="password" type="password"/>
+            <input id="username" placeholder="username" type="text" name='username'/>
+            <input id="password" placeholder="password" type="password" name='password'/>
             <button id="login_button">Login</button>
         </div>
     
     </body>
+
+ <script>
+      $(document).ready(function(){
+        
+            document.getElementById('login_button').onclick = function(){
+                var user_id = -1;
+            $.ajax({
+               url:"login-controller.php",
+                type:"POST",
+                dataType:"json",
+                data: {
+                    method:"login",
+                    username: document.getElementById('username').value,
+                    password: document.getElementById('password').value
+                },
+                success:function(resp){
+                    alert("Logged in!");
+                    user_id = resp[0].id;
+                    window.location.replace("../admin/admin_view.php");
+                },
+                error:function (resp){
+                    alert("error");
+                    console.log(resp);
+                }
+            });
+            
+            }
+            
+        });
+
+        
+    </script>    
 </html>

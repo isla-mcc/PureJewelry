@@ -1,21 +1,23 @@
-
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
         body {
-            font-family: signo, sans-serif;
-            background: white; /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(top, white , #93d8f2); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(top, white, #93d8f2); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(top, white, #93d8f2); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to bottom, white, white, #93d8f2); /* Standard syntax */
-            
+            font-family: Signo-Thin;  
+            margin: 0;
         }
         h1 {
-            font-family: amatic-sc, sans-serif;
+            font-family: Trajan Pro, sans-serif;
+            font-weight: 100;
             text-align: center;
             margin-right: auto;
-            font-size: 50px;
+            font-size: 35px;
             margin-top: 0;
+            margin-bottom: 0;
             
+        }
+
+        h2 {
+            font-weight: 100;
+            font-family: Signo-Thin, sans-serif;
+            color: #b0982c;
+            font-size: 2.5em;
         }
         
 /*NAV BAR*/
@@ -40,40 +42,31 @@
 
         li a {
             display:inline-block;
-            color: black;
+            color: #b0982c;
+            font-size: 1.3em;
             text-align: center;
             padding: 10px 15px;
             text-decoration: none;
+            
         }
 
         li a:hover {
-            background-color: #93d8f2;
+            color: #cbe7f8;
         }
         
         #navbar {
             border-bottom: 2px solid;
             border-color: black;
-        }
-    
-        #ring_img {
-            width: 25%;
-            height: auto;
-            display: inline-block;
-            border: solid white;
-          
-        }
-    
-        #img_gallery {
-            margin-top: 40px;
-            text-align: center;
+            
         }
 
         #logo {
-            width: 40px;
-            height: auto;
+            font-family: Grafolita Script;
+            font-size: 3em;
             display: inline-block;
             margin: auto;
             padding-top: 10px;
+            color: #b0982c;
         }
 
         #logo_div {
@@ -83,6 +76,59 @@
             display: block;
             text-align: center;
         }
+
+/*ITEMS AND DESCRIPTIONS*/
+.leftdiv {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    display:inline-block;
+}
+.itemleft {
+    width: 40%;
+    height: auto;
+    padding: 3.5%;
+    float: left;
+}
+.rightdiv {
+    text-align: center;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+}
+.itemright {
+    width: 40%;
+    height: auto;
+    padding: 3.5%;
+    float: right;
+}
+.itemname {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+.desc {
+    text-align: center;
+    font-size: 1.2em;
+}
+.addtocart {
+    border: 3px solid #b0982c;
+    background-color: rgba(243, 251, 255, 0.28);
+    box-shadow: none;
+    width: 160px;
+    height: 60px;
+    font-size: 1.3em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+.addtocart:hover {
+    color: white;
+    background-color: #b0982c;
+}
+
 
 /* FOOTER */
         span {
@@ -108,13 +154,7 @@
 @media screen and (max-width: 460px) {
 ///////////////////////////////////////////////////////////
 
-#ring_img {
-            width: 50%;
-            height: auto;
-            display: block;
-            border: solid white;
-          
-        }
+
 body {
 background: green;
 }
